@@ -32,7 +32,7 @@ const SalesOverviewChart = () => {
 				<h2 className="text-xl font-semibold text-gray-100">
 					Sales Overview
 				</h2>
-				<div className="h-80 w-full">
+				<div className="h-80 w-full p-3 mt-5">
 					<ResponsiveContainer>
 						<LineChart data={salesData} >
 							<XAxis dataKey="month" interval={"preserveStartEnd"} stroke='#9CA3AF' />
@@ -42,6 +42,7 @@ const SalesOverviewChart = () => {
 								contentStyle={{ backgroundColor: "rgba(31, 41, 55, 0.8)", borderColor: "#4B5563" }}
 								itemStyle={{ color: "#E5E7EB" }}
 							/>
+							<Legend />
 
 							<Line dataKey="sales" stroke="red"  />
 						</LineChart>
