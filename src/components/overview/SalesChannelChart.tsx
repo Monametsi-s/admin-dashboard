@@ -41,6 +41,7 @@ const SalesChannelChart = () => {
 
 							</Bar>
 						</BarChart>
+						
 					</ResponsiveContainer>
 				</div>
 
