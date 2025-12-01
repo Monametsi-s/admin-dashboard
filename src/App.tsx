@@ -3,6 +3,9 @@ import { Route, Routes } from "react-router-dom";
 import OverviewPage from "./pages/OverviewPage.tsx";
 import ProductsPage from "./pages/ProductsPage.tsx";
 import Sidebar from "./components/common/Sidebar.tsx";
+import SalesPage from "./pages/SalesPage.tsx";
+import OrdersPage from "./pages/OrdersPage.tsx";
+import AnalyticsPage from "./pages/AnalyticsPage.tsx";
 
 
 function App() {
@@ -17,7 +20,9 @@ function App() {
       <Routes>
         <Route path="/" element={<OverviewPage />} />
         <Route path="/products" element={<ProductsPage />} />
-
+        <Route path="/sales" element={<SalesPage />} />
+        <Route path="/orders" element={<OrdersPage />} />
+        <Route path="/analytics" element={<AnalyticsPage />} />
       </Routes>
 
     </div>
