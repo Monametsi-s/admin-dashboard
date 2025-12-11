@@ -6,6 +6,7 @@ import Sidebar from "./components/common/Sidebar.tsx";
 import SalesPage from "./pages/SalesPage.tsx";
 import OrdersPage from "./pages/OrdersPage.tsx";
 import AnalyticsPage from "./pages/AnalyticsPage.tsx";
+import SettingsPage from "./pages/SettingsPage.tsx";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/sales" element={<SalesPage />} />
         <Route path="/orders" element={<OrdersPage />} />
         <Route path="/analytics" element={<AnalyticsPage />} />
+        <Route path="/settings" element={<SettingsPage />} />
       </Routes>
 
     </div>
